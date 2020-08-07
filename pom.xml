@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jdk8</groupId>
+    <artifactId>jdk8</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>jdk8</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- maven 默认的源码包路径是 src/main/java 为了简洁这里修改成 src 即可 -->
+        <sourceDirectory>src</sourceDirectory>
+        <!-- maven 默认的测试源码包路径是 test/java 为了简洁这里修改成 test 即可 -->
+        <testSourceDirectory>test</testSourceDirectory>
+
+        <!--
+            保持 maven 默认的编译后文件包路径 target/classess 和 target/test-classess 不变
+            并且，后续运行测试类时需要用到这个路径，即添加虚拟机参数：-Xbootclasspath/p:"target/classes"
+        -->
+
+    </properties>
+
+</project>
+
